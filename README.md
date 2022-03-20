@@ -1,5 +1,5 @@
 # Introduction
-Hello! This is a really small repo because I just decided to put more of my scripts and little projects I spend an afternoon on up onto git. Enjoy!
+Hello! This is a small repo because I just decided to put more of my scripts and little projects I spend an afternoon on up onto git. While there's not much code here, I did go into the algorithms and my designs for this problem in this README quite thoroughly. Enjoy!
 
 This! https://semantle.novalis.org/ is an amazing game, it's called Semantle. It's the same as Wordle (https://www.nytimes.com/games/wordle/index.html), except you get Word2Vec cosine similarity scores back instead of the stuff wordle gives you. You also have unlimited guesses. There's more info on the website so check it out if you like, it's much more fun than just wordle since it involves the semantics (get it) of the words, and the featurespace of the english language represented by the Word2Vec embedding is so very different from how humans think, and I find that fascinating.
 
@@ -16,15 +16,19 @@ However I haven't done that here yet, both because this has me wanting to unders
 If you want to try this out, just do this:
 * Clone the repo
 * Install the `gensim` library for python
-* Run `train_semantle_model.py` to generate the model from the training data (unfortunately it's a bit of a storage cost to upload the models)
+* Download the data to train the model - unfortunately I couldn't upload this because it's too large - from https://s3.amazonaws.com/dl4j-distribution/GoogleNews-vectors-negative300.bin.gz
+* Unzip the data 
+* Run `train_semantle_model.py` to generate the model from the training data (unfortunately I also can't upload the models because of size restrictions)
 * Run `main.py` and use alongside semantle
 * Enjoy besting your friends at this game
 
-Or if you want to copy paste
+Or, to make it much easier:
 ```angular2html
-git clone https://github.com/BlueHephaestus
+git clone https://github.com/BlueHephaestus/SemantleHacks.git
 cd SemantleHacks
-pip install gensim
+wget -c "https://s3.amazonaws.com/dl4j-distribution/GoogleNews-vectors-negative300.bin.gz"
+gzip -d GoogleNews-vectors-negative300.bin.gz
+python3 -m pip install gensim
 python3 train_semantle_model.py
 python3 main.py
 ```
