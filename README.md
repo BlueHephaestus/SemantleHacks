@@ -71,7 +71,7 @@ Anyways watch that example if you want triangulation *with explosions* and i'll 
 
 By drawing circles of these distances from those two points, and knowing that those two points are already at the correct distance from each other because of the map, they obtain two possible points where he could be. 
 
-![](triangulation example.png)
+![](triangulation_example.png)
 
 **This is triangulation.** They now have used two measures (and they aren't even very accurate) of massive areas, to get their possible locations down to just two locations! That's awesome! And if they had a third point, like the relative distance from another point on the map, they would have it down to exactly one point with even better accuracy. Triangulation is used in TONS of places - navigation, GPS, motion tracking, all sorts of stuff that involves locating objects. 
 
