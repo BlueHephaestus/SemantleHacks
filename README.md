@@ -99,3 +99,5 @@ Anyways thanks for reading, and feel free to reach out to me if you have any que
 Good luck, and have fun. 
 
 -Blue
+
+*Sidenote: I realized after writing this and reading the plot summary of Taken 2 that he actually does get her to set off TWO MORE grenades, so it seems that he actually prefers a hybrid approach of both triangulation and gradient descent, and I respect his style.*
